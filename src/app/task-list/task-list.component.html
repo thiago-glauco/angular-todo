@@ -1,0 +1,6 @@
+<app-add-task (newTaskInput)="addTask($event)"></app-add-task>
+<div *ngFor="let task of tasks">
+  <p matLine>
+    <app-task [task]="task"></app-task>
+  </p>
+</div>
